@@ -15,7 +15,10 @@ export default function JobsListPage() {
     (async () => {
       setLoading(true);
       const data = await getJobs();
-      setJobs(data);
+
+      const responseData = data.map(job => job);
+      setJobs(responseData.slice(0, responseData.length - 1));
+
       setLoading(false);
     })();
   }, []);

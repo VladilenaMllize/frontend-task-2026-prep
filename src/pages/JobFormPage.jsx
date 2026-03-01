@@ -50,6 +50,18 @@ export default function JobFormPage({ mode }) {
         setLoading(true);
         setError(null);
 
+        if (!formData.company || !formData.position) {
+            setError("Company and Position are strictly required.");
+            setLoading(false);
+            return;
+        }
+
+        if (formData.applyUrl && !formData.applyUrl.startsWith("http")) {
+            setError("Apply URL must be a valid link starting with http.");
+            setLoading(false);
+            return;
+        }
+
         try {
             const newJob = {
                 company: formData.company,

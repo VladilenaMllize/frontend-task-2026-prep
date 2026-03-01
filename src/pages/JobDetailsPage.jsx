@@ -146,17 +146,17 @@ export default function JobDetailsPage() {
                         <p className={styles.description}>{job.description}</p>
 
                         <h3 className={styles.sectionTitle}>Requirements</h3>
-                        <p className={styles.description}>{job.requirements?.content}</p>
+                        <p className={styles.description}>{job.requirementsData}</p>
                         <ul className={styles.ul}>
-                            {job.requirements?.items?.map((item, idx) => (
+                            {job.requirementsList?.map((item, idx) => (
                                 <li key={idx}><span>{item}</span></li>
                             ))}
                         </ul>
 
                         <h3 className={styles.sectionTitle}>What You Will Do</h3>
-                        <p className={styles.description}>{job.role?.content}</p>
+                        <p className={styles.description}>{job.roleData}</p>
                         <ol className={styles.ol}>
-                            {job.role?.items?.map((item, idx) => (
+                            {job.roleList?.map((item, idx) => (
                                 <li key={idx}><span>{item}</span></li>
                             ))}
                         </ol>
