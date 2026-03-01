@@ -1,0 +1,126 @@
+.page {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, #5964e0, #7c5dde);
+  padding: var(--s-24) 0 var(--s-40);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  font-weight: 900;
+  font-size: var(--fs-24);
+  letter-spacing: 0.2px;
+}
+
+.themeMock {
+  display: flex;
+  align-items: center;
+  gap: var(--s-10);
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s-24);
+}
+
+.createLink {
+  text-decoration: none;
+}
+
+.switch {
+  width: 44px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  position: relative;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: white;
+}
+
+.filtersWrap {
+  margin-top: var(--s-24);
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--s-40);
+  margin-bottom: calc(var(--s-40) * -1);
+}
+
+.sortControl {
+  display: flex;
+  align-items: center;
+  gap: var(--s-10);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  border-radius: var(--r-8);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--fs-16);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.sortSelect:hover {
+  border-color: var(--primary);
+}
+
+.grid {
+  margin-top: var(--s-80);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: var(--s-65);
+  column-gap: var(--s-32);
+}
+
+.state {
+  margin-top: var(--s-32);
+  padding: var(--s-24);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-14);
+  box-shadow: var(--shadow-1);
+  color: var(--muted);
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

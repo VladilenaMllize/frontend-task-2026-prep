@@ -1,0 +1,13 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--s-10);
+  font-size: var(--fs-14);
+  color: var(--text);
+  user-select: none;
+}
+
+.box {
+  width: 18px;
+  height: 18px;
+}

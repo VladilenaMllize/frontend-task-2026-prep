@@ -1,0 +1,43 @@
+.filters {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-14);
+  box-shadow: var(--shadow-1);
+  display: grid;
+  grid-template-columns: 1.4fr 1fr auto auto;
+  overflow: hidden;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: var(--s-10);
+  padding: var(--s-16);
+  border-right: 1px solid var(--border);
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.cellCompact {
+  justify-content: center;
+  min-width: 180px;
+}
+
+.cellButton {
+  justify-content: center;
+  min-width: 140px;
+}
+
+.icon {
+  font-size: 16px;
+  opacity: 0.75;
+}
+
+@media (max-width: 1000px) {
+  .filters { grid-template-columns: 1fr; }
+  .cell { border-right: none; border-bottom: 1px solid var(--border); }
+  .cell:last-child { border-bottom: none; }
+  .cellCompact, .cellButton { justify-content: flex-start; min-width: unset; }
+}

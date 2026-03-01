@@ -1,0 +1,10 @@
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--fs-14);
+  color: var(--text);
+  background: transparent;
+}
+
+.input::placeholder { color: var(--muted); }
