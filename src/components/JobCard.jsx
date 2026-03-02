@@ -15,7 +15,7 @@ export default function JobCard({ job }) {
           className={styles.iconBtn}
           onClick={(e) => {
             e.preventDefault();
-            // To be implemented by students
+            // TO DO
           }}
           aria-label="Edit job"
         >
@@ -26,7 +26,7 @@ export default function JobCard({ job }) {
           className={styles.iconBtn}
           onClick={(e) => {
             e.preventDefault();
-            // To be implemented by students
+            // TO DO
           }}
           aria-label="Delete job"
         >

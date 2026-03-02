@@ -1,7 +1,6 @@
 .page {
     min-height: 100vh;
     padding-bottom: 120px;
-    /* space for footer strip */
     background: var(--bg);
 }
 
@@ -81,7 +80,6 @@
     color: var(--muted);
 }
 
-/* Header Card */
 .headerCard {
     background: var(--surface);
     border-radius: var(--r-6);
@@ -97,7 +95,6 @@
 .logoWrap {
     width: 140px;
     background: #f1f2f8;
-    /* Soft background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +177,6 @@
     background: rgba(89, 100, 224, 0.25);
 }
 
-/* Details Card */
 .detailsCard {
     background: var(--surface);
     border-radius: var(--r-6);
@@ -276,7 +272,6 @@
     font-weight: 700;
 }
 
-/* Footer Strip */
 .footer {
     position: fixed;
     bottom: 0;
@@ -312,7 +307,6 @@
     margin: 0;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .headerCard {
         flex-direction: column;

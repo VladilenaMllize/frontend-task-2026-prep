@@ -30,7 +30,6 @@
   gap: var(--s-12);
   align-items: center;
   z-index: 2;
-  /* Prevent link click */
 }
 
 .iconBtn {
@@ -69,7 +68,6 @@
   position: absolute;
   top: -23px;
   left: var(--s-20);
-  /* border: 3px solid var(--surface); */
   background: var(--surface);
 }
 

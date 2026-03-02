@@ -100,11 +100,6 @@ export default function JobFormPage({ mode }) {
                 <Container>
                     <div className={styles.topRow}>
                         <Link to="/" className={styles.brand}>devjobs</Link>
-                        <div className={styles.themeMock} aria-hidden="true">
-                            <span>☀</span>
-                            <span className={styles.switch} />
-                            <span>☾</span>
-                        </div>
                     </div>
                 </Container>
             </header>

@@ -69,7 +69,6 @@ export default function JobDetailsPage() {
     try {
         hostname = new URL(job.companyWebsite || "https://example.com").hostname;
     } catch (e) {
-        // ignore
     }
 
     return (
@@ -84,7 +83,6 @@ export default function JobDetailsPage() {
 
             <main className={styles.mainContent}>
                 <Container>
-                    {/* Header Card */}
                     <div className={styles.headerCard}>
                         <div className={styles.logoWrap}>
                             <img src={logoSrc} alt={`${job.company} logo`} className={styles.logo} />
@@ -101,7 +99,6 @@ export default function JobDetailsPage() {
                         </div>
                     </div>
 
-                    {/* Details Card */}
                     <div className={styles.detailsCard}>
                         <div className={styles.jobHeader}>
                             <div className={styles.jobHeaderLeft}>
@@ -119,7 +116,7 @@ export default function JobDetailsPage() {
                                     <button
                                         className={styles.iconBtn}
                                         onClick={() => {
-                                            // To be implemented by students
+                                            // TO DO
                                         }}
                                         aria-label="Edit job"
                                         title="Edit job"
@@ -129,7 +126,7 @@ export default function JobDetailsPage() {
                                     <button
                                         className={styles.iconBtn}
                                         onClick={() => {
-                                            // To be implemented by students
+                                            // TO DO
                                         }}
                                         aria-label="Delete job"
                                         title="Delete job"
@@ -164,7 +161,6 @@ export default function JobDetailsPage() {
                 </Container>
             </main>
 
-            {/* Footer Strip */}
             <footer className={styles.footer}>
                 <Container>
                     <div className={styles.footerInner}>
