@@ -3,7 +3,7 @@ import Checkbox from "../ui/Checkbox";
 import Button from "../ui/Button";
 import styles from "./FiltersBar.module.css";
 
-export default function FiltersBar() {
+export default function FiltersBar({ onSearch }) {
   return (
     <form className={styles.filters} onSubmit={(e) => { e.preventDefault(); onSearch?.(); }}>
       <div className={styles.cell}>
@@ -11,7 +11,7 @@ export default function FiltersBar() {
         <Input
           placeholder="Filter by title, companies, expertise..."
         />
-      </div>
+      </div>      
 
       <div className={styles.cell}>
         <img src="/location.svg" alt="" className={styles.icon} aria-hidden="true" />
